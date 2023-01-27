@@ -30,6 +30,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media screen and (max-width: 1090px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     @media screen and (max-width: 1047px) {
       justify-content: center;
     }
@@ -88,8 +93,9 @@
       width: 580px;
     }
 
-    @media screen and (max-width: 1290px) {
+    @media screen and (max-width: 1525px) {
       width: 530px;
+      height: 400px;
     }
 
     @media screen and (max-width: 600px) {
@@ -106,6 +112,7 @@
   &__map--img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
   }
 
   &__polygon {

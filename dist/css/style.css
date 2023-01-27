@@ -690,6 +690,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+  @media screen and (max-width: 1090px) {
+    .location__container {
+      flex-direction: column;
+      align-items: center; } }
   @media screen and (max-width: 1047px) {
     .location__container {
       justify-content: center; } }
@@ -735,9 +739,10 @@ body {
   @media screen and (max-width: 1690px) {
     .location__content--right {
       width: 580px; } }
-  @media screen and (max-width: 1290px) {
+  @media screen and (max-width: 1525px) {
     .location__content--right {
-      width: 530px; } }
+      width: 530px;
+      height: 400px; } }
   @media screen and (max-width: 600px) {
     .location__content--right {
       width: 400px;
@@ -749,7 +754,8 @@ body {
 
 .location__map--img {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  object-fit: contain; }
 
 .location__polygon {
   position: absolute;
