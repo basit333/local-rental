@@ -1,0 +1,70 @@
+.section-serving {
+  padding: 160px 0;
+  position: relative;
+
+  @media screen and (max-width: 600px) {
+    padding: 100px 0 130px 0;
+  }
+}
+
+.section-process {
+  background: url(/dist/img/process-bg.png) no-repeat center / cover;
+  padding: 145px 0 116px 0;
+  margin-top: -77px;
+
+  @media screen and (max-width: 1090px) {
+    padding: 100px 0 0 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 100px 0;
+  }
+}
+
+.section-rental {
+  position: relative;
+  padding: 145px 0 66px 0;
+
+  @media screen and (max-width: 1525px) {
+    padding: 100px 0 66px 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 50px 0;
+  }
+}
+
+.section-services {
+  background: url(/dist/img/services-img.png) no-repeat center / cover;
+  padding: 145px 0 87px 0;
+  position: relative;
+  z-index: -10;
+
+  @media screen and (max-width: 600px) {
+    padding: 100px 0 87px 0;
+  }
+}
+
+.section-location {
+  padding: 145px 0 100px 0;
+  position: relative;
+
+  @media screen and (max-width: 1280px) {
+    padding: 100px 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 80px 0;
+  }
+}
+
+.section-footer {
+  padding: 100px 0 140px 0;
+  background: url(/dist/img/footer-background.png) no-repeat center / cover;
+  position: relative;
+  z-index: -2;
+
+  @media screen and (max-width: 600px) {
+    padding: 50px 0;
+  }
+}

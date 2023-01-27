@@ -1,0 +1,111 @@
+.process {
+  &__title {
+    font-family: $font-primary-bold-italic;
+    font-size: 43px;
+    line-height: 43px;
+    font-weight: 400;
+    color: $color-white;
+    position: relative;
+    margin-bottom: 8px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 331px;
+      height: 1px;
+      background: $color-green-light;
+      left: 0;
+      bottom: -8px;
+
+      @media screen and (max-width: 419px) {
+        width: 155px;
+      }
+    }
+
+    @media screen and (max-width: 1280px) {
+      font-size: 37px;
+      line-height: 37px;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  &__container {
+    @media (max-width: 1090px) {
+      margin-top: 50px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:nth-child(odd) {
+      justify-content: end;
+    }
+
+    &:nth-child(even) {
+      justify-content: start;
+    }
+
+    @media screen and (max-width: 1090px) {
+      flex-direction: column;
+
+      &:nth-child(even) {
+        flex-direction: column-reverse;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      transform: translate(0, 0);
+    }
+
+    & img {
+      max-width: 623px;
+
+      @media screen and (max-width: 1690px) {
+        max-width: 500px;
+      }
+
+      @media screen and (max-width: 1280px) {
+        max-width: 390px;
+      }
+
+      @media screen and (max-width: 500px) {
+        max-width: 300px;
+      }
+
+      @media screen and (max-width: 350px) {
+        max-width: 250px;
+      }
+    }
+  }
+
+  &__content {
+    width: 180px;
+
+    &--title {
+      font-family: $font-primary-bold-italic;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 19px;
+      color: $color-green-light;
+      margin-bottom: 5px;
+    }
+
+    &--description {
+      font-family: $font-primary-medium-italic;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      color: $color-white;
+    }
+  }
+}

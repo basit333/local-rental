@@ -1,0 +1,122 @@
+.services {
+  max-width: 1620px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1690px) {
+    padding: 0 20px;
+  }
+
+  &__title {
+    font-family: $font-primary-bold-italic;
+    font-size: 43px;
+    line-height: 43px;
+    color: $color-white;
+    position: relative;
+    margin-bottom: 118px;
+
+    @media screen and (max-width: 776px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 480px;
+      height: 1px;
+      background: $color-green-light;
+      left: 0;
+      bottom: -31px;
+
+      @media screen and (max-width: 776px) {
+        width: 335px;
+      }
+
+      @media screen and (max-width: 559px) {
+        width: 220px;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 75px;
+  }
+
+  &__card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    max-width: 490px;
+
+    @media screen and (max-width: 520px) {
+      max-width: 420px;
+    }
+
+    @media screen and (max-width: 460px) {
+      max-width: 350px;
+    }
+
+    @media screen and (max-width: 372px) {
+      max-width: 300px;
+    }
+  }
+
+  &__card--content {
+    padding: 84px 65px 93px 65px;
+
+    @media screen and (max-width: 460px) {
+      padding: 50px 45px;
+    }
+  }
+
+  &__card--img {
+    margin-bottom: 47px;
+    margin-inline: auto;
+    width: 144px;
+    height: 124px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__card--heading {
+    font-family: $font-primary-medium;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    color: $color-white;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  &__card--description {
+    font-family: $font-primary-regular;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: $color-white;
+    font-weight: 400;
+  }
+
+  &__polygon {
+    position: absolute;
+    top: -145px;
+    left: 0;
+    z-index: -1;
+    width: 186px;
+    height: 817px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+}

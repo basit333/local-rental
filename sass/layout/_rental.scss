@@ -1,0 +1,137 @@
+.rental {
+  &__title {
+    font-size: 43px;
+    line-height: 43px;
+    font-family: $font-primary-bold-italic;
+    font-weight: 500;
+    margin-bottom: 104px;
+    position: relative;
+    padding-inline: 20px;
+
+    @media screen and (max-width: 776px) {
+      margin-bottom: 80px;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 40px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 127px;
+      height: 1px;
+      background: $color-green-light;
+      left: 21px;
+      bottom: -7px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 100px;
+
+    @media screen and (max-width: 1590) {
+      padding-inline: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__card {
+    border-radius: 7px;
+    filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.16));
+    background: $color-white;
+    max-width: 500px;
+
+    @media screen and (max-width: 600px) {
+      max-width: 400px;
+    }
+
+    @media screen and (max-width: 450px) {
+      max-width: 350px;
+    }
+
+    @media screen and (max-width: 390px) {
+      max-width: 300px;
+    }
+  }
+
+  &__card--content {
+    padding: 57px 37px;
+  }
+
+  &__img {
+    width: 428px;
+    height: 372px;
+    margin-bottom: 74px;
+    margin-inline: auto;
+
+    @media screen and (max-width: 600px) {
+      width: 300px;
+      height: 250px;
+      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 275px;
+      height: 230px;
+    }
+
+    @media screen and (max-width: 390px) {
+      width: 227px;
+      height: 200px;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__heading {
+    font-family: $font-primary-bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: $color-grey-light;
+    margin-bottom: 21px;
+  }
+
+  &__paragraph {
+    font-family: $font-primary-regular;
+    font-size: 19px;
+    line-height: 19px;
+    color: $color-grey-light;
+    margin-bottom: 45px;
+  }
+
+  &__main--btn {
+    text-align: center;
+  }
+
+  &__polygon {
+    max-width: 238px;
+    position: absolute;
+    right: 0;
+    bottom: 95px;
+    z-index: -1;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+}
